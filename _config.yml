@@ -1,9 +1,9 @@
-title: Nighthawk Pages 
-description: "Class of 2025"
-owner_name: John Mortensen
-github_username: nighthawkcoders
-github_repo: "portfolio_2025" 
-baseurl: "/portfolio_2025"
+title: Discord Basement Simulator
+description: "Discord Basement Level"
+owner_name: Evan Svetina
+github_username: EvanSvetina
+github_repo: "discordBasementSimulator" 
+baseurl: "/discordBasementSimulator"
 future: true
 remote_theme: jekyll/minima
 minima:
@@ -15,7 +15,7 @@ minima:
 # remote_theme: pages-themes/midnight@v0.2.0
 # remote_theme: pages-themes/dinky@v0.2.0
 # remote_theme: pages-themes/minimal@v0.2.0
-# remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0
 # remote_theme: pages-themes/time-machine@v0.2.0
 plugins:
   - jekyll-remote-theme
