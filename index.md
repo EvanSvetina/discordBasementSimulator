@@ -1,5 +1,5 @@
 ---
-layout: post 
+layout: base 
 title: OUR EPIC IDEA!!!!!!!11!!1
 description: Hi Tanisha <3
 author: Evan Svetina, West Stefany
@@ -30,7 +30,7 @@ menu: nav/home.html
 </head>
 
 <body>
-<h1>The Idea:</h1><br></style>
+<h1>The Idea:</h1><br>
 <b1>
 The premise is simple. The player walks into a strange, rancid basement populated by computers, Dorito crumbs, and a strange fellow known throughout the lands as IShowGreen.
 IShowGreen is feverishly at work, without any breaking in his concentration as he mines crypto and rapidly types on his keyboard. The player can explore his many open devices, including a computer where they can play a BitCoin mining minigame and an open discord server where the player can talk to random people online (simulated ofc).<br>
