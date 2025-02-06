@@ -45,9 +45,14 @@ IShowGreen is feverishly at work, without any breaking in his concentration as h
 </ul>
 <h2>Progression:</h2>
 <ul>
-  <li>Nothing is required to leave except for talking to IShowGreen 20 Times</li>
-  <li>Minigames optional but they're fun</li>
+  <li>To complete the level, players must obtain at least 1 bitcoin and talk to IShowGreen at least 20 times.</li>
+  <li>The </li>
   <li>After talking to IShowGreen 20 times, basement door opens and the player can exit the basement (touching the light sends an alert of completion or smthn idk)</li>
 </ul>
 </b1>
+<img src="quelx.png">
+<ul>
+<li>shimmy shimmy ay ahimmy Y AHIMMY AAUAUUGHHG</li>
+<li>The "updateMoney"
+</ul>
 </body>
