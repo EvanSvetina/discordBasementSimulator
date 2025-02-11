@@ -25,7 +25,7 @@ class GameLevelDesert {
 
     // Player data for Chillguy
     const sprite_src_chillguy = path + "/images/gamify/chillguy.png"; // be sure to include the path
-    const CHILLGUY_SCALE_FACTOR = 5;
+    const CHILLGUY_SCALE_FACTOR = 5; //Bigger = bigger chillguy.
     const sprite_data_chillguy = {
         id: 'Chill Guy',
         greeting: "Hi I am Chill Guy, the desert wanderer. I am looking for wisdome and adventure!",
@@ -34,14 +34,14 @@ class GameLevelDesert {
         STEP_FACTOR: 1000,
         ANIMATION_RATE: 50,
         INIT_POSITION: { x: 0, y: height - (height/CHILLGUY_SCALE_FACTOR) }, 
-        pixels: {height: 384, width: 512},
-        orientation: {rows: 3, columns: 4 },
+        pixels: {height: 384, width: 512}, //change these to alter dimensinos
+        orientation: {rows: 3, columns: 4 }, //change these to fit spritesheet properly.
         down: {row: 0, start: 0, columns: 3 },
         left: {row: 2, start: 0, columns: 3 },
         right: {row: 1, start: 0, columns: 3 },
         up: {row: 3, start: 0, columns: 3 },
         hitbox: { widthPercentage: 0.45, heightPercentage: 0.2 },
-        keypress: { up: 87, left: 65, down: 83, right: 68 } // W, A, S, D
+        keypress: { up: 87, left: 65, down: 83, right: 68 } // W, A, S, D. A is 65, B is 66, etc...
     };
 
 

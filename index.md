@@ -38,21 +38,24 @@ IShowGreen is feverishly at work, without any breaking in his concentration as h
 <ul>
   <li>Basement BG (can be iterated on, D&D Placeholder for now</li>
   <li>Animated IShowGreen (50% done, just not animated)</li>
-  <li>Computer sprites (probably just duplicate one and slightly modify it)</li>
+  <li>Computer sprites</li>
   <li>Music (sneaky snitch or custom beats)</li>
   <li>Sound FX (computer games, IShowGreen talking)</li>
   <li>potential easter eggs</li>
 </ul>
 <h2>Progression:</h2>
 <ul>
-  <li>To complete the level, players must obtain at least 1 bitcoin and talk to IShowGreen at least 20 times.</li>
-  <li>The </li>
-  <li>After talking to IShowGreen 20 times, basement door opens and the player can exit the basement (touching the light sends an alert of completion or smthn idk)</li>
+  <li>To complete the level, players must obtain at least 100 dollars in crypto to pay IShowGreen and escape the basement.</li>
+  <li>One computer NPC will have computer science questions that can be answered for money.</li> 
+  <!-- Fix/remove this later when we get a better idea -->
+  <li>The other NPC has a crypto mining minigame where the player must create a progressively better password to shield their earnings from hungry hackers.</li>
 </ul>
 </b1>
 <img src="quelx.png">
 <ul>
-<li>shimmy shimmy ay ahimmy Y AHIMMY AAUAUUGHHG</li>
-<li>The "updateMoney"
+<li>Custom sprites for basement, Npcs (both computers and IShowGreen)</li>
 </ul>
+<img src="images/gamify/computer1.png"><br>
+<img src="images/gamify/computer2.png"><br>
+<img src="images/gamify/ishowgreen.png"><br>
 </body>
