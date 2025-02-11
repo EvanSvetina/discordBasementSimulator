@@ -61,3 +61,5 @@ export class Background extends GameObject {
 }
 
 export default Background;
+
+//I'm sorry, but 1660 lines of code is just way too much.
