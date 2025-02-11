@@ -36,9 +36,9 @@ The premise is simple. The player walks into a strange, rancid basement populate
 IShowGreen is feverishly at work, without any breaking in his concentration as he mines crypto and rapidly types on his keyboard. The player can explore his many open devices, including a computer where they can play a BitCoin mining minigame and an open discord server where the player can talk to random people online (simulated ofc).<br>
 <h2>Possible ASSETS:</h2><br>
 <ul>
-  <li>Basement BG (can be iterated on, D&D Placeholder for now</li>
-  <li>Animated IShowGreen (50% done, just not animated)</li>
-  <li>Computer sprites</li>
+  <li>Basement BG DONE</li>
+  <li>Animated IShowGreen DONE</li>
+  <li>Computer sprites DONE</li>
   <li>Music (sneaky snitch or custom beats)</li>
   <li>Sound FX (computer games, IShowGreen talking)</li>
   <li>potential easter eggs</li>
@@ -58,4 +58,5 @@ IShowGreen is feverishly at work, without any breaking in his concentration as h
 <img src="images/gamify/computer1.png"><br>
 <img src="images/gamify/computer2.png"><br>
 <img src="images/gamify/ishowgreen.png"><br>
+<img src="images/gamify/basement.png"><br>
 </body>

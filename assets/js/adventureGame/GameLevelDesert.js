@@ -14,11 +14,11 @@ class GameLevelDesert {
 
 
     // Background data
-    const image_src_desert = path + "/images/gamify/desert.png"; // be sure to include the path
+    const image_src_basement = path + "/images/gamify/basement.png"; // be sure to include the path
     const image_data_desert = {
-        name: 'desert',
-        greeting: "Welcome to the desert!  It is hot and dry here, but there are many adventures to be had!",
-        src: image_src_desert,
+        name: 'basement',
+        greeting: "IShowGreen has locked you in his discord mod basement. Earn enough money to escape.",
+        src: image_src_basement,
         pixels: {height: 580, width: 1038}
     };
 
@@ -46,17 +46,17 @@ class GameLevelDesert {
 
 
     // NPC data for Tux 
-    const sprite_src_tux = path + "/images/gamify/tux.png"; // be sure to include the path
-    const sprite_data_tux = {
-        id: 'Tux',
-        greeting: "Hi I am Tux, the Linux mascot.  I am very happy to spend some linux shell time with you!",
-        src: sprite_src_tux,
+    const sprite_src_computer1 = path + "/images/gamify/computer1.png"; // be sure to include the path
+    const sprite_data_computer1 = {
+        id: 'copmuter1',
+        greeting: "Game -- Start!",
+        src: sprite_src_computer1,
         SCALE_FACTOR: 8,  // Adjust this based on your scaling needs
         ANIMATION_RATE: 50,
-        pixels: {height: 256, width: 352},
+        pixels: {height: 128, width: 160},
         INIT_POSITION: { x: (width / 2), y: (height / 2)},
-        orientation: {rows: 8, columns: 11 },
-        down: {row: 5, start: 0, columns: 3 },  // This is the stationary npc, down is default 
+        orientation: {rows: 5, columns: 4},
+        down: {row: 1, start: 0, columns: 1},  // This is the stationary npc, down is default 
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
         // Linux command quiz
         quiz: { 
@@ -175,7 +175,7 @@ const sprite_data_htmlhank = {
     this.objects = [
       { class: Background, data: image_data_desert },
       { class: Player, data: sprite_data_chillguy },
-      { class: Npc, data: sprite_data_tux },
+      { class: Npc, data: sprite_data_computer1 },
       { class: Npc, data: sprite_data_octocat },
       { class: Npc, data: sprite_data_robot },
      // { class: Npc, data: sprite_data_htmlhank }, 
