@@ -77,19 +77,18 @@ class GameLevelDesert {
       };
 
 
-
-      // NPC data for Octocat
-      const sprite_src_octocat = path + "/images/gamify/octocat.png"; // be sure to include the path
-      const sprite_data_octocat = {
-        id: 'Octocat',
-        greeting: "Hi I am Octocat! I am the GitHub code code code collaboration mascot",
-        src: sprite_src_octocat,
+      // NPC data for Computer2
+      const sprite_src_computer2 = path + "/images/gamify/computer2.png"; // be sure to include the path
+      const sprite_data_computer2 = {
+        id: 'Computer2',
+        greeting: "Hi I am Computer2! I am the GitHub code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code",
+        src: sprite_src_computer2,
         SCALE_FACTOR: 10,  // Adjust this based on your scaling needs
-        ANIMATION_RATE: 50,
-        pixels: {height: 301, width: 801},
+        ANIMATION_RATE: 8,
+        pixels: {height: 64, width: 832},
         INIT_POSITION: { x: (width / 4), y: (height / 4)},
-        orientation: {rows: 1, columns: 4 },
-        down: {row: 0, start: 0, columns: 3 },  // This is the stationary npc, down is default 
+        orientation: {rows: 1, columns: 13 },
+        down: {row: 0, start: 0, columns: 12 },  // This is the stationary npc, down is default 
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.1 },
         // GitHub command quiz 
         quiz: { 
@@ -176,7 +175,7 @@ const sprite_data_htmlhank = {
       { class: Background, data: image_data_desert },
       { class: Player, data: sprite_data_chillguy },
       { class: Npc, data: sprite_data_computer1 },
-      { class: Npc, data: sprite_data_octocat },
+      { class: Npc, data: sprite_data_computer2 },
       { class: Npc, data: sprite_data_robot },
      // { class: Npc, data: sprite_data_htmlhank }, 
     ];
