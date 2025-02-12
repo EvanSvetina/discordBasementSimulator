@@ -35,7 +35,7 @@ class GameLevelDesert {
         ANIMATION_RATE: 50,
         INIT_POSITION: { x: 0, y: height - (height/CHILLGUY_SCALE_FACTOR) }, 
         pixels: {height: 384, width: 512}, //change these to alter dimensinos
-        orientation: {rows: 4, columns: 3 }, //change these to fit spritesheet properly.
+        orientation: {rows: 3, columns: 4 }, //change these to fit spritesheet properly.
         down: {row: 0, start: 0, columns: 3 },
         left: {row: 2, start: 0, columns: 3 },
         right: {row: 1, start: 0, columns: 3 },
