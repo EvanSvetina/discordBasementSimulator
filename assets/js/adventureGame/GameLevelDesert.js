@@ -52,14 +52,11 @@ class GameLevelDesert {
       greeting: "Game -- Start!",
       src: sprite_src_computer1,
       SCALE_FACTOR: 8,  // Adjust this based on your scaling needs
-      ANIMATION_RATE: 50,
-      pixels: {height: 128, width: 160},
+      ANIMATION_RATE: 8,
+      pixels: {height: 64, width: 1280},
       INIT_POSITION: { x: (width / 2), y: (height / 2)},
-      orientation: {rows: 3, columns: 4},
-      down: {row: 0, start: 0, columns: 3},  // Adjusted to fit the spritesheet properly
-      left: {row: 1, start: 0, columns: 3},
-      right: {row: 2, start: 0, columns: 3},
-      up: {row: 3, start: 0, columns: 3},
+      orientation: {rows: 1, columns: 20},
+      down: {row: 0, start: 0, columns: 20},  // Adjusted to fit the spritesheet properly
       hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
       // Linux command quiz
       quiz: { 
