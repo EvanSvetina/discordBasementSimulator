@@ -81,12 +81,12 @@ class GameLevelDesert {
       const sprite_src_computer2 = path + "/images/gamify/computer2.png"; // be sure to include the path
       const sprite_data_computer2 = {
         id: 'Computer2',
-        greeting: "Hi I am Computer2! I am the GitHub code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code",
+        greeting: "Hi, I am Computer2! I am the GitHub code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code",
         src: sprite_src_computer2,
-        SCALE_FACTOR: 10,  // Adjust this based on your scaling needs
+        SCALE_FACTOR: 8,  // Adjust this based on your scaling needs
         ANIMATION_RATE: 8,
         pixels: {height: 64, width: 832},
-        INIT_POSITION: { x: (width / 4), y: (height / 4)},
+        INIT_POSITION: { x: (550), y: (130)},
         orientation: {rows: 1, columns: 13 },
         down: {row: 0, start: 0, columns: 12 },  // This is the stationary npc, down is default 
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.1 },
@@ -109,21 +109,21 @@ class GameLevelDesert {
     }
   
 
-    const sprite_src_robot = path + "/images/gamify/robot.png"; // be sure to include the path
-    const sprite_data_robot = {
-        id: 'Robot',
-        greeting: "Hi I am Robot, the Jupyter Notebook mascot.  I am very happy to spend some linux shell time with you!",
-        src: sprite_src_robot,
+    const sprite_src_ishowgreen = path + "/images/gamify/ishowgreen.png"; // be sure to include the path
+    const sprite_data_ishowgreen = {
+        id: 'IShowGreen',
+        greeting: "... Bitcoin... i need to farm NFTs... buy my meme coin and I'll give you nfts...", //placeholder
+        src: sprite_src_ishowgreen,
         SCALE_FACTOR: 10,  // Adjust this based on your scaling needs
         ANIMATION_RATE: 100,
-        pixels: {height: 316, width: 627},
+        pixels: {height: 128, width: 896},
         INIT_POSITION: { x: (width * 3 / 4), y: (height * 3 / 4)},
-        orientation: {rows: 3, columns: 6 },
+        orientation: {rows: 1, columns: 7 },
         down: {row: 1, start: 0, columns: 6 },  // This is the stationary npc, down is default 
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
-        // Linux command quiz
+        //Final test -  after player has enough money, interacting with ishowgreen results in this uiz. You must get 100% to win.
         quiz: { 
-          title: "Jupyter Notebook Command Quiz",
+          title: "Your Final Challenge",
           questions: [
             "Which shortcut is used to run a cell in Jupyter Notebook?\n1. Shift + Enter\n2. Ctrl + Enter\n3. Alt + Enter\n4. Tab + Enter",
             "Which shortcut adds a new cell above the current cell?\n1. A\n2. B\n3. C\n4. D",
@@ -176,7 +176,7 @@ const sprite_data_htmlhank = {
       { class: Player, data: sprite_data_chillguy },
       { class: Npc, data: sprite_data_computer1 },
       { class: Npc, data: sprite_data_computer2 },
-      { class: Npc, data: sprite_data_robot },
+      { class: Npc, data: sprite_data_ishowgreen },
      // { class: Npc, data: sprite_data_htmlhank }, 
     ];
   }
