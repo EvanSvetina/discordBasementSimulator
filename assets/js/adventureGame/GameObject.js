@@ -162,7 +162,11 @@ class GameObject {
         if (!this.state.collisionEvents.includes(objectID)) {
             // add the collisionType to the collisions array, making it the current collision
             this.state.collisionEvents.push(objectID);
-            alert(objectGreet);
+            if(typeof objectGreet == String){
+                alert(objectGreet);
+            }else if(typeof objectGreet == Array){
+                alert(objectGreet[Math.round(Math.random()*objectGreet.length)]);
+            }
         }
         this.handleReaction();
     }
