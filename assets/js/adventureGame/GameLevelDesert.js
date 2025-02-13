@@ -86,7 +86,7 @@ class GameLevelDesert {
         SCALE_FACTOR: 8,  // Adjust this based on your scaling needs
         ANIMATION_RATE: 8,
         pixels: {height: 64, width: 832},
-        INIT_POSITION: { x: (550), y: (130)},
+        INIT_POSITION: { x: (550), y: (125)},
         orientation: {rows: 1, columns: 13 },
         down: {row: 0, start: 0, columns: 12 },  // This is the stationary npc, down is default 
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.1 },
@@ -112,7 +112,13 @@ class GameLevelDesert {
     const sprite_src_ishowgreen = path + "/images/gamify/ishowgreen.png"; // be sure to include the path
     const sprite_data_ishowgreen = {
         id: 'IShowGreen',
-        greeting: "... Bitcoin... i need to farm NFTs... buy my meme coin and I'll give you nfts...", //placeholder
+        greeting: [
+          "Crypto... bLOcKcHaIn... i nEEd to fArm NFTs... buy meh mEme coin and I'll give yoU NFTs...",
+          "EW, WHAT IS THAT HORRIBLE SMELL?... lavender? AUGH, SHAMPOO!",
+          "Get out of my room, or you will pay the price... IN V-BUCKS!",
+          "Hey there... my crypto mining job is WAY more stressful than your 9-5...",
+          "Don't even TRY to give me water... I HATE the taste of water!"
+        ],
         src: sprite_src_ishowgreen,
         SCALE_FACTOR: 10,  // Adjust this based on your scaling needs
         ANIMATION_RATE: 100,
