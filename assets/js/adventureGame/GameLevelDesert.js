@@ -113,6 +113,7 @@ class GameLevelDesert {
     const sprite_data_ishowgreen = {
         id: 'IShowGreen',
         greeting: [
+          "$list$",
           "Crypto... bLOcKcHaIn... i nEEd to fArm NFTs... buy meh mEme coin and I'll give yoU NFTs...",
           "EW, WHAT IS THAT HORRIBLE SMELL?... lavender? AUGH, SHAMPOO!",
           "Get out of my room, or you will pay the price... IN V-BUCKS!",
