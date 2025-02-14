@@ -1,4 +1,5 @@
 import GameEnv from './GameEnv.js';
+import beginQuiz from './quizGame.js';
 
 /**
  * The GameObject class serves as a base class for all game objects.
@@ -167,6 +168,10 @@ class GameObject {
             }else{
                 alert(objectGreet);
             }
+        }
+        console.log(objectID);
+        if(objectID == "Computer1"){
+            beginQuiz();
         }
         this.handleReaction();
     }
