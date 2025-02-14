@@ -4,7 +4,7 @@ import Background from './Background.js';
 import Player from './Player.js';
 import Npc from './Npc.js';
 
-class GameLevelDesert {
+class GameLevelBasement {
   constructor(path) {
     const header = document.querySelector('header');
     const footer = document.querySelector('footer');
@@ -25,7 +25,7 @@ class GameLevelDesert {
 
     // Player data for Chillguy
     const sprite_src_chillguy = path + "/images/gamify/chillguy.png"; // be sure to include the path
-    const CHILLGUY_SCALE_FACTOR = 5; //Bigger = bigger chillguy.
+    const CHILLGUY_SCALE_FACTOR = 3; //smaller = bigger chillguy.
     const sprite_data_chillguy = {
         id: 'Chill Guy',
         greeting: "I am Chill Guy, the desert wanderer. I am looking for wisdom and adventure!",
@@ -54,7 +54,7 @@ class GameLevelDesert {
       SCALE_FACTOR: 8,  // Adjust this based on your scaling needs
       ANIMATION_RATE: 8,
       pixels: {height: 64, width: 1280},
-      INIT_POSITION: { x: (width / 2), y: (height / 2)},
+      INIT_POSITION: { x: (width * 1 / 4), y: (height * 48 / 400)}, // Swapped position
       orientation: {rows: 1, columns: 20},
       down: {row: 0, start: 0, columns: 20},  // Adjusted to fit the spritesheet properly
       hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
@@ -81,12 +81,19 @@ class GameLevelDesert {
       const sprite_src_computer2 = path + "/images/gamify/computer2.png"; // be sure to include the path
       const sprite_data_computer2 = {
         id: 'Computer2',
-        greeting: "Hi, I am Computer2! I am the GitHub code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code",
+        greeting: [
+          "$list$",
+          "Hi, I am Computer2! I am the GitHub code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code collaboration mascot, except I'm not. That's Octocat.",
+          "Initializing CS Examination...",
+          "Wait, you're not IShowGreen? Finally, someone with proper sanitation!",
+          "Psst! Don't tell IShowGreen, but I keep deleting his NFTs...",
+          "Finally, someone without Dorito dust on their fingers. Take this quiz!"
+        ],
         src: sprite_src_computer2,
         SCALE_FACTOR: 8,  // Adjust this based on your scaling needs
         ANIMATION_RATE: 8,
         pixels: {height: 64, width: 832},
-        INIT_POSITION: { x: (550), y: (125)},
+        INIT_POSITION: { x: (width * 7 / 12), y: (height / 14)}, // Swapped position
         orientation: {rows: 1, columns: 13 },
         down: {row: 0, start: 0, columns: 12 },  // This is the stationary npc, down is default 
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.1 },
@@ -121,13 +128,13 @@ class GameLevelDesert {
           "Don't even TRY to give me water... I HATE the taste of water!"
         ],
         src: sprite_src_ishowgreen,
-        SCALE_FACTOR: 10,  // Adjust this based on your scaling needs
-        ANIMATION_RATE: 100,
+        SCALE_FACTOR: 4,  // Adjust this based on your scaling needs
+        ANIMATION_RATE: 6,
         pixels: {height: 128, width: 896},
-        INIT_POSITION: { x: (width * 3 / 4), y: (height * 3 / 4)},
+        INIT_POSITION: { x: (width * 17 / 22), y: (height * 1 / 4)},
         orientation: {rows: 1, columns: 7 },
         down: {row: 0, start: 0, columns: 6 },  // This is the stationary npc, down is default 
-        hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
+        hitbox: { widthPercentage: 0.01, heightPercentage: 0.01 },
         //Final test -  after player has enough money, interacting with ishowgreen results in this uiz. You must get 100% to win.
         quiz: { 
           title: "Your Final Challenge",
@@ -189,4 +196,4 @@ const sprite_data_htmlhank = {
 
 }
 
-export default GameLevelDesert;
+export default GameLevelBasement;
