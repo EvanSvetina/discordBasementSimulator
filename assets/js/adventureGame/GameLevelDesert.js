@@ -28,7 +28,7 @@ class GameLevelDesert {
     const CHILLGUY_SCALE_FACTOR = 5; //Bigger = bigger chillguy.
     const sprite_data_chillguy = {
         id: 'Chill Guy',
-        greeting: "Hi I am Chill Guy, the desert wanderer. I am looking for wisdome and adventure!",
+        greeting: "I am Chill Guy, the desert wanderer. I am looking for wisdom and adventure!",
         src: sprite_src_chillguy,
         SCALE_FACTOR: CHILLGUY_SCALE_FACTOR,
         STEP_FACTOR: 1000,
@@ -81,7 +81,7 @@ class GameLevelDesert {
       const sprite_src_computer2 = path + "/images/gamify/computer2.png"; // be sure to include the path
       const sprite_data_computer2 = {
         id: 'Computer2',
-        greeting: "Hi, I am Computer2! I am the GitHub code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code",
+        greeting: "Hi, I am Computer2! I am the GitHub code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code code",
         src: sprite_src_computer2,
         SCALE_FACTOR: 8,  // Adjust this based on your scaling needs
         ANIMATION_RATE: 8,
@@ -183,8 +183,7 @@ const sprite_data_htmlhank = {
       { class: Player, data: sprite_data_chillguy },
       { class: Npc, data: sprite_data_computer1 },
       { class: Npc, data: sprite_data_computer2 },
-      { class: Npc, data: sprite_data_ishowgreen },
-     // { class: Npc, data: sprite_data_htmlhank }, 
+      { class: Npc, data: sprite_data_ishowgreen }
     ];
   }
 
