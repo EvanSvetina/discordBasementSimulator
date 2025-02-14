@@ -15,7 +15,7 @@ class GameLevelDesert {
 
     // Background data
     const image_src_basement = path + "/images/gamify/basement.png"; // be sure to include the path
-    const image_data_desert = {
+    const image_data_basement = {
         name: 'basement',
         greeting: "IShowGreen has locked you in his discord mod basement. Earn enough money to escape.",
         src: image_src_basement,
@@ -126,7 +126,7 @@ class GameLevelDesert {
         pixels: {height: 128, width: 896},
         INIT_POSITION: { x: (width * 3 / 4), y: (height * 3 / 4)},
         orientation: {rows: 1, columns: 7 },
-        down: {row: 1, start: 0, columns: 6 },  // This is the stationary npc, down is default 
+        down: {row: 0, start: 0, columns: 6 },  // This is the stationary npc, down is default 
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
         //Final test -  after player has enough money, interacting with ishowgreen results in this uiz. You must get 100% to win.
         quiz: { 
@@ -179,7 +179,7 @@ const sprite_data_htmlhank = {
 
     // List of objects defnitions for this level
     this.objects = [
-      { class: Background, data: image_data_desert },
+      { class: Background, data: image_data_basement },
       { class: Player, data: sprite_data_chillguy },
       { class: Npc, data: sprite_data_computer1 },
       { class: Npc, data: sprite_data_computer2 },
