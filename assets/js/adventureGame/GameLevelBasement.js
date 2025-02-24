@@ -97,12 +97,12 @@ class GameLevelBasement {
         orientation: {rows: 1, columns: 13 },
         down: {row: 0, start: 0, columns: 12 },  // This is the stationary npc, down is default 
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.1 },
-        // GitHub command quiz 
+        // Javascript Game 
         quiz: { 
-          title: "GitHub Command Quiz",
+          title: "Javascript Quiz",
           questions: [
-            "Which command is used to clone a repository?\n1. git clone\n2. git fork\n3. git copy\n4. git download",
-            "Which command is used to add changes to the staging area?\n1. git add\n2. git stage\n3. git commit\n4. git push",
+            "How many ways can you define a variable in JS?\n1. 1\n2. 2\n3. 3\n4. 4",
+            "How many primitive data types are there in JS?\n1. git add\n2. git stage\n3. git commit\n4. git push",
             "Which command is used to commit changes?\n1. git commit\n2. git add\n3. git save\n4. git push",
             "Which command is used to push changes to a remote repository?\n1. git push\n2. git upload\n3. git send\n4. git commit",
             "Which command is used to pull changes from a remote repository?\n1. git pull\n2. git fetch\n3. git receive\n4. git update",

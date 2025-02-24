@@ -8,7 +8,8 @@ export function getStats() {
     const endpoints = {
         balance: `${javaURI}/rpg_answer/getBalance/${personId}`,
         chatScore: `${javaURI}/rpg_answer/getChatScore/${personId}`,
-        questionsAnswered: `${javaURI}/rpg_answer/getQuestionsAnswered/${personId}`
+        questionsAnswered: `${javaURI}/rpg_answer/getQuestionsAnswered/${personId}`,
+        money: `${javaURI}/rpg_answer/getQuestionsAnswered/${personId}`
     };
 
     for (let [key, url] of Object.entries(endpoints)) {
@@ -46,8 +47,17 @@ export function getChatScore() {
 }
 
 /**
- * Fetches the number of questions answered by the player.
+ * Fetches the player's current money value.
  */
+export function getMoney() {
+    fetch(`${javaURI}/rpg_answer/getMoney/1`, fetchOptions)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("money").innerText = data ?? 0;
+        })
+        .catch(err => console.error("Error fetching money:", err));
+}
+
 export function getQuestionsAnswered() {
     fetch(`${javaURI}/rpg_answer/getQuestionsAnswered/1`, fetchOptions)
         .then(response => response.json())
