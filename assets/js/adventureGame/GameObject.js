@@ -1,5 +1,5 @@
 import GameEnv from './GameEnv.js';
-import beginQuiz from './quizGame.js';
+import beginQuiz from './passwordGame.js';
 
 /**
  * The GameObject class serves as a base class for all game objects.
