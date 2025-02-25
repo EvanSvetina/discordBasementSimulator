@@ -28,8 +28,20 @@ menu: nav/home.html
   }
 </style>
 </head>
-
+<h2><a href="/gamify/adventureGame">Link to Game</a></h2>
 <body>
+<h1>Tinkers</h1>
+So far, we have come up with a few ideas for new features we want to implement into the game level. Here are a few of our works which are finished:
+<ul>
+    <li>Randomized dialogue with NPCS (where applicable)</li>
+    <li><img src="randimg1.png" width="500" height="150"></li>
+    <li><img src="randimg2.png" width="500" height="150"></li>
+    <li><img src="randimg3.png" width="500" height="150"></li>
+    <li>New HTML element containing WIP minigame (computer1)</li>
+    <li><img src="htmlelement.png" width="500" height="400" ></li>
+</ul>
+<br><br><br>
+<br>
 <h1>The Idea:</h1><br>
 <b1>
 The premise is simple. The player walks into a strange, rancid basement populated by computers, Dorito crumbs, and a strange fellow known throughout the lands as IShowGreen.

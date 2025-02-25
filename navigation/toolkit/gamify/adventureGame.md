@@ -81,14 +81,14 @@ permalink: /gamify/adventureGame
 
 <!-- Score & Stats -->
 <div id="score" style="position: absolute; top: 75px; left: 10px; color: black; font-size: 20px; background-color: white;">
-   Time: <span id="timeScore">0</span>
+   Press E to interact with NPCs. Time spent in the basement: <span id="timeScore">0</span>
 </div>
 
 <div id="stats-container" style="position: absolute; top: 120px; left: 10px; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 10px; border-radius: 5px;">
     <div>Balance: <span id="balance">0</span></div>
     <div>Chat Score: <span id="chatScore">0</span></div>
     <div>Questions Answered: <span id="questionsAnswered">0</span></div>
-    
+    <div>Money: <span id="money">0</span></div>
     <!-- NPC Tracker Button added below the stats -->
     <button id="npcTrackerButton">NPC Tracker</button>
 </div>
@@ -100,7 +100,7 @@ permalink: /gamify/adventureGame
 
 <!-- NPC Tracker Pop-up -->
 <div id="npcTrackerPopup">
-    <h2>NPCs Met:</h2>
+    <h2>Interacted with:</h2>
     <ul id="npcTrackerList"></ul>
 </div>
 
@@ -166,7 +166,7 @@ permalink: /gamify/adventureGame
     // Function to track NPC interactions
     function trackNpcInteraction() {
         // List of possible NPCs to track (in order)
-        const possibleNpcs = ["Tux", "Octocat", "Linux Robot"];
+        const possibleNpcs = ["Computer 1", "Computer 2", "IShowGreen"];
 
         // If the player hasn't interacted yet, add the next NPC in order
         if (npcTracker.length < possibleNpcs.length) {
