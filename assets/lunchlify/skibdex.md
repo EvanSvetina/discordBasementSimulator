@@ -22,5 +22,16 @@ FROM THE GYATT
 TO THE RIZZ
 GALVANIZED
 CUBIC STEEL
-
 PMO ICL TS BRAINROTTD AS HELL
+see I believe that if I see the Eye of Rah
+the curse will fanum tax my level 60 gyatt
+
+WOAAOOOOAOOOOUOOOO
+IS THIS HOW THE BRAINROT GOES
+WOOOOOOOOOOAOOOOUOOO
+i guess you'll just HAVE to be THOSE WHO KNOW
+
+I'm skibidiing it, everybody knows
+We eatin' Lunchly inside of Ohio
+I am those who know, check the comments if you don't
+Properties in Egypt where the fade tapers low
