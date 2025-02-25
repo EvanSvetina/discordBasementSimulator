@@ -179,3 +179,25 @@ permalink: /gamify/adventureGame
         updateNpcTracker();
     }
 </script>
+<script>
+    // Function to show the link when tilde key is pressed
+    function showLink() {
+        const link = document.getElementById("tildeLink");
+        if (link) {
+            link.style.display = "block";
+        }
+    }
+
+    // Wait until the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+        // Detect when the player presses the tilde key
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "`") {
+                showLink();
+            }
+        });
+    });
+</script>
+
+<!-- Hidden link to be shown when tilde key is pressed -->
+<a id="tildeLink" href="/assets/lunchlify/skibdex.md" style="display: none;">Secret knowledge only the most powerful wizards shall dare access</a>
