@@ -24,11 +24,13 @@ menu: nav/home.html
     }
     a:hover {
       text-decoration: underline;
-    }
+      text-shadow: 0 0 5px green;
+      box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.5);
+      color: rgb(0, 100, 0);   }
   }
 </style>
 </head>
-<h2><a href="/gamify/adventureGame">Link to Game</a></h2>
+<h2><a href="/discordBasementSimulator/gamify/adventureGame">Link to Game</a></h2>
 <body>
 <h1>Tinkers</h1>
 So far, we have come up with a few ideas for new features we want to implement into the game level. Here are a few of our works which are finished:
@@ -38,7 +40,7 @@ So far, we have come up with a few ideas for new features we want to implement i
     <li><img src="randimg2.png" width="500" height="150"></li>
     <li><img src="randimg3.png" width="500" height="150"></li>
     <li>New HTML element containing WIP minigame (computer1)</li>
-    <li><img src="htmlelement.png" width="500" height="400" ></li>
+    <li><img src="htmlelement1.png" width="500" height="400" ></li>
 </ul>
 <br><br><br>
 <br>
