@@ -18,6 +18,9 @@ We eatin' Lunchly inside of Ohio
 I am those who know, check the comments if you don't
 Properties in Egypt where the fade tapers low
 
-FROM THE 
-TO THE CLIPS
-TO THE 
+FROM THE GYATT
+TO THE RIZZ
+GALVANIZED
+CUBIC STEEL
+
+PMO ICL TS BRAINROTTD AS HELL
