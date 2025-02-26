@@ -17,6 +17,10 @@ export default function beginQuiz(){
             }else if(event.key == "Escape"){
                 quizWindow.remove();
                 quizzing = false;
+            }else if(event.key == "Enter" || event.key == "Return"){
+                if(typebox.innerHTML == "albuquerque"){
+                    new Audio("./assets/Albuquerq.mp3").play();
+                }
             }else if(event.key.length == 1){
                 typebox.innerHTML += event.key;
             }
