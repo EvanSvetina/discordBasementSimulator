@@ -4,6 +4,11 @@ title: Adventure Game
 permalink: /gamify/adventureGame
 ---
 
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+</head>
 <style>
 /* Existing CSS styling */
 #custom-prompt {

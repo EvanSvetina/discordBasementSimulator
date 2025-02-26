@@ -9,7 +9,7 @@ I went from mewing streak, straight up to max aura
 My brain develops, do you remember amogus?
 
 WOAAOOOOAOOOOUOOOO
-IS THIS HOW THE BRAINROT GOES
+IS THIS HOW THE LUNCHLY MOLDS
 WOOOOOOOOOOAOOOOUOOO
 i guess you'll just HAVE to be THOSE WHO KNOW
 
@@ -20,14 +20,14 @@ Properties in Egypt where the fade tapers low
 
 FROM THE GYATT
 TO THE RIZZ
-GALVANIZED
-CUBIC STEEL
+SKIBIDI
+THE TOILET
 PMO ICL TS BRAINROTTD AS HELL
 see I believe that if I see the Eye of Rah
 the curse will fanum tax my level 60 gyatt
 
 WOAAOOOOAOOOOUOOOO
-IS THIS HOW THE BRAINROT GOES
+IS THIS HOW THE LUNCHLY MOLDS
 WOOOOOOOOOOAOOOOUOOO
 i guess you'll just HAVE to be THOSE WHO KNOW
 

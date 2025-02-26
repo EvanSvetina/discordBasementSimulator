@@ -8,13 +8,16 @@ export default function beginQuiz(){
         document.getElementById("gameContainer").appendChild(quizWindow);
 
         let typebox = document.createElement("div");
-        typebox.style = "position: absolute; width: 100%; height: 20%; bottom: 15%; background-color: black; font-size: auto; font-family: serif;";
+        typebox.style = 'position: absolute; width: 100%; height: 20%; bottom: 15%; background-color: black; font-size: auto; font-family: font-family: "Sixtyfour", sans-serif; font-size: 6vh; text-align: center; vertical-align: center; color: rgb(0, 255, 0);';
         quizWindow.appendChild(typebox);
 
         window.addEventListener("keydown", function(event){
             if(event.key == 'Backspace'){
                 typebox.innerHTML = typebox.innerHTML.slice(0, -1);
-            }else{
+            }else if(event.key == "Escape"){
+                quizWindow.remove();
+                quizzing = false;
+            }else if(event.key.length == 1){
                 typebox.innerHTML += event.key;
             }
         });
