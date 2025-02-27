@@ -60,23 +60,12 @@ class GameLevelBasement {
       hitbox: { widthPercentage: 0.1, heightPercentage: 0.2 },
       // Linux command quiz
       quiz: { 
-        title: "Linux Command Quiz",
+        title: "Hi testing man",
         questions: [
-        "Which command is used to list files in a directory?\n1. ls\n2. dir\n3. list\n4. show",
-        "Which command is used to change directories?\n1. cd\n2. chdir\n3. changedir\n4. changedirectory",
-        "Which command is used to create a new directory?\n1. mkdir\n2. newdir\n3. createdir\n4. makedir",
-        "Which command is used to remove a file?\n1. rm\n2. remove\n3. delete\n4. erase",
-        "Which command is used to remove a directory?\n1. rmdir\n2. removedir\n3. deletedir\n4. erasedir",
-        "Which command is used to copy files?\n1. cp\n2. copy\n3. duplicate\n4. xerox",
-        "Which command is used to move files?\n1. mv\n2. move\n3. transfer\n4. relocate",
-        "Which command is used to view a file?\n1. cat\n2. view\n3. show\n4. display",
-        "Which command is used to search for text in a file?\n1. grep\n2. search\n3. find\n4. locate",
-        "Which command is used to view the contents of a file?\n1. less\n2. more\n3. view\n4. cat" 
+        "Please get out of here and fix this, computer1 shouldn't be able to interact with the player like this.\n1. ok\n2. bye\n3. lol\n4. :0",
         ] 
       }
       };
-
-
       // NPC data for Computer2
       const sprite_src_computer2 = path + "/images/gamify/computer2.png"; // be sure to include the path
       const sprite_data_computer2 = {
@@ -99,23 +88,20 @@ class GameLevelBasement {
         hitbox: { widthPercentage: 0.1, heightPercentage: 0.1 },
         // Javascript Game 
         quiz: { 
-          title: "Javascript Quiz",
+          title: "Mr. Mortensen's CS Gauntlet",
           questions: [
             "How many ways can you define a variable in JS?\n1. 1\n2. 2\n3. 3\n4. 4",
-            "How many primitive data types are there in JS?\n1. git add\n2. git stage\n3. git commit\n4. git push",
-            "Which command is used to commit changes?\n1. git commit\n2. git add\n3. git save\n4. git push",
-            "Which command is used to push changes to a remote repository?\n1. git push\n2. git upload\n3. git send\n4. git commit",
-            "Which command is used to pull changes from a remote repository?\n1. git pull\n2. git fetch\n3. git receive\n4. git update",
-            "Which command is used to check the status of the working directory and staging area?\n1. git status\n2. git check\n3. git info\n4. git log",
-            "Which command is used to create a new branch?\n1. git branch\n2. git create-branch\n3. git new-branch\n4. git checkout",
-            "Which command is used to switch to a different branch?\n1. git checkout\n2. git switch\n3. git change-branch\n4. git branch",
-            "Which command is used to merge branches?\n1. git merge\n2. git combine\n3. git join\n4. git integrate",
-            "Which command is used to view the commit history?\n1. git log\n2. git history\n3. git commits\n4. git show"
+            "How many primitive data types are there in JS?\n1. 5\n2. 7\n3. 9\n4. 2",
+            "What is the official name of GitHub's mascot?\n1. Gitcat\n2. Git\n3. Octocat\n4. Octogit",
+            "How do you send changes to a remote repository?\n1. git push\n2. git upload\n3. git send\n4. git commit",
+            "What is new coding group's worst nightmare?\n1. The Github Cat\n2. Syntax Errors\n3. Bad Commits\n4. Merge Conflicts",
+            "What is Mr. Mortensen's Motto?\n1. Ball, Ball, Ball\n2. Eat, Sleep, Code\n3. Commit, Push, Win\n4. Code, Code, Code",
+            "What command creates a new code cell in Jupyter notebooks?\n1. C\n2. command+C\n3. option+C\n4. Right click",
+            "How does Slack organize information and conversations?\n1. Channels\n2. Servers\n3. Huddles\n4. Branches",
+            "What is the most important skill in CS?\n1. Grit\n2. Talent\n3. Communication\n4. Money",
           ] 
         }
     }
-  
-
     const sprite_src_ishowgreen = path + "/images/gamify/ishowgreen.png"; // be sure to include the path
     const sprite_data_ishowgreen = {
         id: 'IShowGreen',
@@ -137,18 +123,9 @@ class GameLevelBasement {
         hitbox: { widthPercentage: 0.01, heightPercentage: 0.01 },
         //Final test -  after player has enough money, interacting with ishowgreen results in this uiz. You must get 100% to win.
         quiz: { 
-          title: "Your Final Challenge",
+          title: "You want to... leave, huh?",
           questions: [
-            "Which shortcut is used to run a cell in Jupyter Notebook?\n1. Shift + Enter\n2. Ctrl + Enter\n3. Alt + Enter\n4. Tab + Enter",
-            "Which shortcut adds a new cell above the current cell?\n1. A\n2. B\n3. C\n4. D",
-            "Which shortcut adds a new cell below the current cell?\n1. B\n2. A\n3. C\n4. D",
-            "Which shortcut changes a cell to Markdown format?\n1. M\n2. Y\n3. R\n4. K",
-            "Which shortcut changes a cell to Code format?\n1. Y\n2. M\n3. C\n4. D",
-            "Which shortcut deletes the current cell?\n1. D, D\n2. X\n3. Del\n4. Ctrl + D",
-            "Which shortcut saves the current notebook?\n1. Ctrl + S\n2. Alt + S\n3. Shift + S\n4. Tab + S",
-            "Which shortcut restarts the kernel?\n1. 0, 0\n2. R, R\n3. K, K\n4. Shift + R",
-            "Which shortcut interrupts the kernel?\n1. I, I\n2. Ctrl + C\n3. Shift + I\n4. Alt + I",
-            "Which shortcut toggles line numbers in a cell?\n1. L\n2. N\n3. T\n4. G"
+            "Fine. You got the cash?\n1. Yes\n2. No\n3. Maybe\n4. Errr....",
           ] 
         }
       };

@@ -1,7 +1,27 @@
+import { updateBalance } from "./StatsManager.js";
+
 const Prompt = {
     isOpen: false,
     dim: false,
-
+    currentNpc: null,
+    
+    // Keep this function for other uses, but we won't use it for questions
+    shuffleArray(array) {
+        if (!array || array.length === 0) return [];
+        const newArray = [...array];
+        for (let i = newArray.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+        }
+        return newArray;
+    },
+    
+    // Helper function to normalize answers for comparison
+    normalizeAnswer(answer) {
+        if (!answer) return "";
+        return answer.trim();
+    },
+    
     backgroundDim: {
         create () {
             this.dim = true // sets the dim to be true when the prompt is opened
@@ -21,13 +41,21 @@ const Prompt = {
             this.dim = false
             console.log("REMOVE DIM");
             const dimDiv = document.getElementById("dim");
-            dimDiv.remove();
-            Prompt.isOpen = false
-            promptTitle.style.display = "none";
-            promptDropDown.style.width = "0"; 
-            promptDropDown.style.top = "0";  
-            promptDropDown.style.left = "-100%"; 
-            promptDropDown.style.transition = "all 0.3s ease-in-out";
+            if (dimDiv) {
+                dimDiv.remove();
+            }
+            Prompt.isOpen = false;
+            const promptTitle = document.getElementById("promptTitle");
+            if (promptTitle) {
+                promptTitle.style.display = "none";
+            }
+            const promptDropDown = document.querySelector('.promptDropDown');
+            if (promptDropDown) {
+                promptDropDown.style.width = "0"; 
+                promptDropDown.style.top = "0";  
+                promptDropDown.style.left = "-100%"; 
+                promptDropDown.style.transition = "all 0.3s ease-in-out";
+            }
         },
     },
 
@@ -46,12 +74,9 @@ const Prompt = {
         return table;
     },
     
-    
-
     toggleDetails() {
-        Prompt.detailed = !Prompt.detailed
-
-        Prompt.updatePromptDisplay()
+        Prompt.detailed = !Prompt.detailed;
+        Prompt.updatePromptDisplay();
     },
 
     updatePromptTable() {
@@ -102,22 +127,70 @@ const Prompt = {
         container.appendChild(table);
         return container;
     },
+    
+    // Updated handleSubmit with grading functionality
     handleSubmit() {
         // Collect all answers
         const inputs = document.querySelectorAll("input[type='text']");
         const answers = Array.from(inputs).map(input => ({
-            questionIndex: input.dataset.questionIndex,
+            questionIndex: parseInt(input.dataset.questionIndex),
             answer: input.value.trim()
         }));
+        
         console.log("Submitted Answers:", answers);
-        // Handle the submission logic (e.g., save answers, validate, etc.)
-        alert("Your answers have been submitted!");
-        Prompt.isOpen = false;
-        Prompt.backgroundDim.remove();
+        
+        // Check if this is Computer2's quiz
+        if (this.currentNpc && this.currentNpc.spriteData.id === 'Computer2') {
+            // Import the computer2answers for grading
+            import('./computer2answers.js')
+                .then(module => {
+                    const correctAnswers = module.default;
+                    let correctCount = 0;
+                    let userAnswers = [];
+                    
+                    // Compare user answers with correct answers
+                    answers.forEach(answer => {
+                        const questionIndex = answer.questionIndex;
+                        userAnswers[questionIndex] = answer.answer;
+                        
+                        if (questionIndex < correctAnswers.length) {
+                            // Compare the answers (case-sensitive for exact matches)
+                            if (this.normalizeAnswer(answer.answer) === this.normalizeAnswer(correctAnswers[questionIndex])) {
+                                correctCount++;
+                            }
+                        }
+                    });
+                    
+                    // Save user answers for stats tracking (optional)
+                    if (typeof window.savePlayerAnswers === 'function') {
+                        window.savePlayerAnswers(userAnswers);
+                    }
+                    
+                    // Award points based on correct answers
+                    const pointsPerCorrectAnswer = Math.floor(Math.random() * 10) + 5; // Random points between 1 and 10
+                    const totalPoints = correctCount * pointsPerCorrectAnswer;
+                    
+                    // Update the balance using StatsManager function
+                    const newBalance = updateBalance(totalPoints);
+                    
+                    // Show feedback to the player
+                    alert(`Well done. You got ${correctCount} out of ${correctAnswers.length} correct.\nYou earned ${totalPoints} dollars!\nYour total money is now ${newBalance}.`);
+                })
+                .catch(err => {
+                    console.error("Error grading quiz:", err);
+                    alert("There was an error grading your quiz. Please try again.");
+                });
+        } else {
+            // For other NPCs, just show a generic message
+            alert("Answers submitted!");
+        }
+        
+        // Close the prompt
+        this.isOpen = false;
+        this.backgroundDim.remove();
     },
     
-    
-    updatePromptDisplay () {
+    updatePromptDisplay() {
         const table = document.getElementsByClassName("table scores")[0]
         const detailToggleSection = document.getElementById("detail-toggle-section")
         const clearButtonRow = document.getElementById("clear-button-row")
@@ -138,30 +211,24 @@ const Prompt = {
         if (clearButtonRow) {
             clearButtonRow.remove()
         }
-
         
-        document.getElementById("promptDropDown").append(Prompt.updatePromptTable()) //update new Prompt
-        
-        
+        document.getElementById("promptDropDown").append(this.updatePromptTable()) //update new Prompt
     },
 
-    backPage () {
+    backPage() {
         const table = document.getElementsByClassName("table scores")[0]
 
-        if (Prompt.currentPage - 1 == 0) {
+        if (this.currentPage - 1 == 0) {
             return;
         }
     
-
-        Prompt.currentPage -= 1
-
-        Prompt.updatePromptDisplay()
+        this.currentPage -= 1
+        this.updatePromptDisplay()
     },
     
-    frontPage () {
-        Prompt.currentPage += 1
-        Prompt.updatePromptDisplay()
-        
+    frontPage() {
+        this.currentPage += 1
+        this.updatePromptDisplay()
     },
 
     openPromptPanel(npc) {
@@ -199,23 +266,19 @@ const Prompt = {
         promptDropDown.style.transition = "all 0.3s ease-in-out"; 
     },
     
-
-    initializePrompt () {
+    initializePrompt() {
+        console.log("Initializing prompt system");
         const promptTitle = document.createElement("div");
         promptTitle.id = "promptTitle";
-        document.getElementById("promptDropDown").appendChild(promptTitle);
-        // document.getElementById("promptDropDown").append(this.updatePromptTable())
-
-       // document.getElementById("prompt-button").addEventListener("click",Prompt.openPromptPanel)
-    },
-
-    shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
+        
+        const promptDropDown = document.getElementById("promptDropDown");
+        if (promptDropDown) {
+            promptDropDown.appendChild(promptTitle);
+            console.log("Prompt system initialized successfully");
+        } else {
+            console.error("Could not find promptDropDown element");
         }
-        return array;
-    }
+    },
 };
 
 export default Prompt;

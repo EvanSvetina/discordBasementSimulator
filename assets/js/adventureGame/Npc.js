@@ -5,7 +5,7 @@ class Npc extends Character {
     constructor(data = null) {
         super(data);
         this.quiz = data?.quiz?.title; // Quiz title
-        this.questions = Prompt.shuffleArray(data?.quiz?.questions || []); // Shuffle questions
+        this.questions = data?.quiz?.questions || [];
         this.currentQuestionIndex = 0; // Start from the first question
         this.alertTimeout = null;
         this.bindEventListeners();
