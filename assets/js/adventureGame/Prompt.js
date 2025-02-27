@@ -127,8 +127,7 @@ const Prompt = {
         container.appendChild(table);
         return container;
     },
-    
-    // Updated handleSubmit with grading functionality
+        
     handleSubmit() {
         // Collect all answers
         const inputs = document.querySelectorAll("input[type='text']");
@@ -139,8 +138,37 @@ const Prompt = {
         
         console.log("Submitted Answers:", answers);
         
+        // Check if this is IShowGreen's quiz (for game ending)
+        if (this.currentNpc && this.currentNpc.spriteData.id === 'IShowGreen') {
+            // Check if the player answered "yes" to the first question
+            if (answers.length > 0 && 
+                answers[0].questionIndex === 0 && 
+                this.normalizeAnswer(answers[0].answer).toLowerCase() === "yes") {
+                
+                // Check player's balance
+                const playerBalance = window.playerBalance || 0;
+                
+                if (playerBalance >= 250) {
+                    // Player has enough money to escape - trigger victory
+                    import('./winnerScreen.js')
+                        .then(module => {
+                            module.showVictoryScreen();
+                        })
+                        .catch(err => {
+                            console.error("Error showing victory screen:", err);
+                            alert("You've escaped the basement! (But there was an error showing the victory screen)");
+                        });
+                } else {
+                    // Not enough money
+                    alert(`"Not so fast! You need 250 money bucks to escape, but you only have ${playerBalance}. Keep hustling!"`);
+                }
+            } else {
+                // Player didn't answer "yes"
+                alert("Come back when you're ready to leave... and have the money!");
+            }
+        }
         // Check if this is Computer2's quiz
-        if (this.currentNpc && this.currentNpc.spriteData.id === 'Computer2') {
+        else if (this.currentNpc && this.currentNpc.spriteData.id === 'Computer2') {
             // Import the computer2answers for grading
             import('./computer2answers.js')
                 .then(module => {
@@ -167,7 +195,7 @@ const Prompt = {
                     }
                     
                     // Award points based on correct answers
-                    const pointsPerCorrectAnswer = Math.floor(Math.random() * 10) + 5; // Random points between 1 and 10
+                    const pointsPerCorrectAnswer = Math.floor(Math.random()*100) + 335; // temp
                     const totalPoints = correctCount * pointsPerCorrectAnswer;
                     
                     // Update the balance using StatsManager function
@@ -189,7 +217,6 @@ const Prompt = {
         this.isOpen = false;
         this.backgroundDim.remove();
     },
-    
     updatePromptDisplay() {
         const table = document.getElementsByClassName("table scores")[0]
         const detailToggleSection = document.getElementById("detail-toggle-section")

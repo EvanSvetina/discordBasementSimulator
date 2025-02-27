@@ -86,7 +86,7 @@ permalink: /gamify/adventureGame
 
 <!-- Score & Stats -->
 <div id="score" style="position: absolute; top: 75px; left: 10px; color: black; font-size: 20px; background-color: white;">
-   Press E to interact with NPCs. Get 100 dollars to escape the basement. Time spent in the basement: <span id="timeScore">0</span>
+   Press E to interact. Get 250 dollars to escape the basement. Time spent in the basement: <span id="timeScore">0</span>
 </div>
 
 <div id="stats-container" style="position: absolute; top: 120px; left: 10px; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 10px; border-radius: 5px;">
