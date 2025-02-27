@@ -59,11 +59,45 @@ export function showVictoryScreen() {
     // Add victory screen to the document
     document.body.appendChild(victoryScreen);
     
-    // Play victory sound (optional)
-    const victorySound = new Audio();
-    victorySound.src = "assets/js/adventureGame/victory.mp3"; // You'll need to add this file
-    victorySound.volume = 0.7;
-    victorySound.play().catch(error => console.log("Audio couldn't play automatically:", error));
+    // Try to play victory sound with better error handling and path options
+    try {
+        const victorySound = new Audio();
+        // Try different possible paths to find the audio file
+        const possiblePaths = [
+            "assets/js/adventureGame/victory.mp3",
+            "/assets/js/adventureGame/victory.mp3",
+            "../assets/js/adventureGame/victory.mp3",
+            "../../assets/js/adventureGame/victory.mp3",
+            "./victory.mp3"
+        ];
+        
+        // Function to try the next path
+        const tryPath = (index) => {
+            if (index >= possiblePaths.length) {
+                console.log("Could not find victory sound file in any expected location.");
+                return;
+            }
+            
+            victorySound.src = possiblePaths[index];
+            victorySound.volume = 0.7;
+            
+            victorySound.oncanplaythrough = () => {
+                console.log("Victory sound loaded successfully from: " + possiblePaths[index]);
+                victorySound.play()
+                    .catch(error => console.log("Audio couldn't play automatically:", error));
+            };
+            
+            victorySound.onerror = () => {
+                console.log("Failed to load audio from: " + possiblePaths[index]);
+                tryPath(index + 1);
+            };
+        };
+        
+        // Start trying paths
+        tryPath(0);
+    } catch (error) {
+        console.log("Error setting up victory sound:", error);
+    }
     
     // Stop the game timer and any background music
     if (window.GameControl && typeof window.GameControl.stopTimer === 'function') {

@@ -39,11 +39,16 @@ So far, we have come up with a few ideas for new features we want to implement i
     <li><img src="randimg1.png" width="500" height="150"></li>
     <li><img src="randimg2.png" width="500" height="150"></li>
     <li><img src="randimg3.png" width="500" height="150"></li>
-    <li>New HTML element containing WIP minigame (computer1)</li>
+    <li>New HTML element containing WIP minigame (img needs to be updated)</li> 
     <li><img src="htmlelement1.png" width="500" height="400" ></li>
+    <li>Replaced "Balance" with "Money Bucks". Earn money bucks by completing the quiz on computer 2. When the password game is finished on computer 1, that will also reward money. Earning 250 dollars allows you to escape the basement by talking to IShowGreen.</li>
+    <li><img src="money1.png" width="500" height="200" ></li>
+    <li><img src="money2.png" width="500" height="200" ></li>
+    <li><img src="victoryscreen.png" width="500" height="400" ></li>
 </ul>
-<br><br><br>
 <br>
+<img src="quelx.png">
+<br><br><br>
 <h1>The Idea:</h1><br>
 <b1>
 The premise is simple. The player walks into a strange, rancid basement populated by computers, Dorito crumbs, and a strange fellow known throughout the lands as IShowGreen.
@@ -65,7 +70,6 @@ IShowGreen is feverishly at work, without any breaking in his concentration as h
   <li>The other NPC has a crypto mining minigame where the player must create a progressively better password to shield their earnings from hungry hackers.</li>
 </ul>
 </b1>
-<img src="quelx.png">
 <ul>
 <li>Custom sprites for basement, Npcs (both computers and IShowGreen)</li>
 </ul>
