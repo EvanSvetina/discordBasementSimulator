@@ -195,7 +195,7 @@ const Prompt = {
                     }
                     
                     // Award points based on correct answers
-                    const pointsPerCorrectAnswer = Math.floor(Math.random()*100) + 335; // temp
+                    const pointsPerCorrectAnswer = Math.floor(Math.random()*5) + 10; // temp
                     const totalPoints = correctCount * pointsPerCorrectAnswer;
                     
                     // Update the balance using StatsManager function
