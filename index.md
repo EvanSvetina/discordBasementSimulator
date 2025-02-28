@@ -133,7 +133,7 @@ So far, we have come up with a few ideas for new features we want to implement i
     <li><img src="randimg2.png" width="500" height="150"></li>
     <li><img src="randimg3.png" width="500" height="150"></li>
     <li>New HTML element containing WIP minigame (img needs to be updated)</li> 
-    <li><img src="htmlelement1.png" width="500" height="400" ></li>
+    <li><img src="htmlelement2.png" width="500" height="400" ></li>
     <li>Replaced "Balance" with "Money Bucks". Earn money bucks by completing the quiz on computer 2. When the password game is finished on computer 1, that will also reward money. Earning 250 dollars allows you to escape the basement by talking to IShowGreen.</li>
     <li><img src="money1.png" width="500" height="200" ></li>
     <li><img src="money2.png" width="500" height="200" ></li>
