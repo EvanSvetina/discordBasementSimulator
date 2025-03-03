@@ -132,14 +132,19 @@ So far, we have come up with a few ideas for new features we want to implement i
     <li><img src="randimg1.png" width="500" height="150"></li>
     <li><img src="randimg2.png" width="500" height="150"></li>
     <li><img src="randimg3.png" width="500" height="150"></li>
+    <li><img src="randomDialogue.png"></li>
     <li>New HTML element containing WIP minigame (img needs to be updated)</li> 
     <li><img src="htmlelement2.png" width="500" height="400" ></li>
+    <li><img src="quizElement.png"></li>
     <li>Replaced "Balance" with "Money Bucks". Earn money bucks by completing the quiz on computer 2. When the password game is finished on computer 1, that will also reward money. Earning 250 dollars allows you to escape the basement by talking to IShowGreen.</li>
     <li><img src="money1.png" width="500" height="200" ></li>
     <li><img src="money2.png" width="500" height="200" ></li>
-    <li><img src="victoryscreen.png" width="500" height="400" ></li>
+    <li><img src="moneyAward.png" ></li>
+    <li>Victory screen and win sfx, ability to restart game</li>
+    <li><img src="vicScreenCode.png"></li>
+    <li><img src="victoryscreen.png"></li>
 </ul>
-<br>
+<br><br><br>
 <img src="quelx.png">
 <br><br><br>
 <h1>The Idea:</h1><br>
